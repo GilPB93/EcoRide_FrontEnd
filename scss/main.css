@@ -11969,4 +11969,9 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+h1, .h1 {
+  color: #2D2D2D;
+  font-size: 2em;
+  font-family: "Bebas Neue", sans-serif, 700;
 }/*# sourceMappingURL=main.css.map */

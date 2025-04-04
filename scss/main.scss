@@ -1,1 +1,7 @@
 @import 'custom';
+
+h1 {
+  color: $text-dark;
+  font-size: 2em;
+  font-family: $family-title;
+}
