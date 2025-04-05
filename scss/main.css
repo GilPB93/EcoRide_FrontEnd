@@ -11971,7 +11971,6 @@ textarea.form-control-lg {
   }
 }
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
-  color: #2D2D2D;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 700;
 }
@@ -11995,5 +11994,60 @@ h4, .h4 {
 p {
   font-family: "Roboto", sans-serif;
   font-size: 1em;
-  color: #2D2D2D;
+}
+
+body {
+  background-color: #3C2F2F;
+  max-width: 100%;
+  justify-items: center;
+}
+
+header {
+  max-width: 1440px;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.logo {
+  max-width: 100px;
+  width: 100%;
+  max-height: 100px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2em;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #D2B48C;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  background-color: #7A8B53;
+}
+
+.navbar .container-fluid, .navbar .container-sm, .navbar .container-md, .navbar .container-lg, .navbar .container-xl, .navbar .container-xxl {
+  max-width: 1440px;
+  display: flex;
+  align-items: flex-end;
 }/*# sourceMappingURL=main.css.map */
