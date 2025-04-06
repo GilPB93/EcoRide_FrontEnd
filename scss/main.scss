@@ -3,6 +3,7 @@
 h1, h2, h3, h4 {
   font-family: $family-title;
   font-weight: 700;
+  margin: 0;
 }
 h1 {
   font-size: 5em;
@@ -19,6 +20,7 @@ h4 {
 p {
   font-family: $family-text;
   font-size: 1em;
+  margin: 0;
 }
 
 body {
@@ -26,7 +28,7 @@ body {
   max-width: 100%;
   justify-items: center;
 }
-header {
+header, footer {
   max-width: 1440px;
   width: 100%;
   justify-content: space-between;
@@ -69,5 +71,48 @@ header {
   max-width: 1440px;
   display: flex;
   align-items: flex-end;
+}
+.legal {
+  font-family: $family-text;
+  font-size: 0.85em;
+  margin: 5px;
+}
+.footer-line {
+  max-width: 900px;
+  width: 100%;
+  height: 1px;
+  color: white;
+  margin: 20px 0;
+  justify-self: center;
+}
+.footer-container {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-direction: column;
+
+}
+.list-unstyled {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-contacts {
+  padding: 5px;
+}
+.footer-contacts h4 {
+  text-decoration: underline;
+  font-size: 1.7em;
+}
+footer p {
+  font-size: 0.85em;
+  margin: 0;
 }
 
