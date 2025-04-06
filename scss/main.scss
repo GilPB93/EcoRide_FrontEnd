@@ -6,16 +6,16 @@ h1, h2, h3, h4 {
   margin: 0;
 }
 h1 {
-  font-size: 5em;
-}
-h2 {
   font-size: 4em;
 }
-h3 {
+h2 {
   font-size: 3em;
 }
+h3 {
+  font-size: 2.3em;
+}
 h4 {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 p {
   font-family: $family-text;
@@ -136,4 +136,25 @@ footer p {
   height: 100%;
   margin: 20px;
   padding: 0;
+}
+
+// LEGAL PAGE
+.legal-content {
+  max-width: 900px;
+  width: 100%;
+  background-color: $secondary1;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.legal-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.legal-icon{
+  width: 60px; 
+  height : 60px;
+  margin-right: 10px;
 }
