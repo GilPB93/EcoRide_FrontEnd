@@ -1,0 +1,54 @@
+<div class="signup-container">
+    <div>
+        <img src="/img/band_signup.jpg" alt="inscription" class="hero-image">
+    </div>
+
+    <div class="signup-form">
+        <h1 class="text-center">Inscription</h1>
+        <h3 class="text-center">Rejoingnez l'Aventure!</h3>
+        <p class="text-center">Créez votre compte et commencez dès maintenant à réserver vos trajets en covoiturage ! </p>
+
+        <form id="signupForm">
+            <div class="signup-lastname">
+                <label for="LastnameInput" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="LastnameInput" placeholder="Saissisez votre nom" name="Lastname" required> 
+            </div>
+            <div class="signup-firstname">
+                <label for="FirstnameInput" class="form-label">Prénom</label>
+                <input type="text" class="form-control" id="FirstnameInput" placeholder="Saissisez votre prénom" name="Firstname" required> 
+            </div>
+            <div class="signup-username">
+                <label for="PseudoInput" class="form-label">Pseudo</label>
+                <input type="text" class="form-control" id="PseudoInput" placeholder="Saissisez un pseudo pour votre compte" name="Pseudo" required> 
+            </div>
+            <div class="signup-email">
+                <label for="EmailInput" class="form-label">Email</label>
+            <input type="email" class="form-control" id="EmailInput" placeholder="exemple@mail.fr" name="Email" required> 
+            </div>
+            <div class="signup-password">
+                <label for="PasswordInput" class="form-label">Mot de passe</label>
+                <input type="password" class="form-control" id="PasswordInput" name="Password" placeholder="Saissisez votre mot de passe" required>
+                <p class="passwordNeeds">Votre mot de passe doit contenir au moins 8 caractères, incluant une lettre majuscule, une lettre minuscule, un chiffre et un caractère spécial.</p>
+            </div>
+            <div class="signup-password-confirm">
+                <label for="ValidatePasswordInput" class="form-label">Confirmation Password</label>
+                <input type="password" class="form-control" id="ValidatePasswordInput" placeholder="Confirmez votre mot de passe" name="PasswordConfirm" required>
+            </div>
+            
+            <div class="signup-submit">
+                <button class="cta" type="submit">
+                    <span>Incription</span>
+                    <svg width="15px" height="10px" viewBox="0 0 13 10">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </button>
+            </div> 
+            <div class="text-center pt-3">
+                <a class="redirect-signin" href="/signin">Vous avez déjà un compte ? Connectez-vous ici !</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
