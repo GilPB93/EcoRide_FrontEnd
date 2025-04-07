@@ -351,16 +351,9 @@ footer p {
   transform: scale(0.95);
 }
 
-// CONTACT PAGE
-.contact-container{
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-}
-.contact-image {
-  background-image: url('../img/band_trajetRecherche.jpg');
+
+// MULTIPLE USES FOR PAGES
+.hero-image {
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat;
@@ -370,18 +363,6 @@ footer p {
   margin: 0;
   padding: 0;
   display: flex;
-}
-.contact-form{
-  max-width: 1000px;
-  width: 100%;
-  background-color: $secondary1;
-  flex-direction: column;
-  padding: 20px;
-  border-radius: 10px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  display: flex;
-  justify-content: center;
-  transform: translateY(-10%);
 }
 .form-label{
   font-family: $family-title;
@@ -395,7 +376,7 @@ footer p {
   font-family: $family-text;
   width: 100%;
   height: 40px;
-  padding: 5px;
+  padding: 5px 10px;
   border: none;
   outline: none;
   border-radius: 15px;
@@ -403,12 +384,67 @@ footer p {
   box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
   transition: 300ms ease-in-out;
 }
+
+
+// CONTACT PAGE
+.contact-container{
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.contact-form{
+  max-width: 1000px;
+  width: 100%;
+  background-color: $secondary1;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: flex;
+  justify-content: center;
+  transform: translateY(-10%);
+}
 .contact-submit{
   margin-top: 20px;
   align-content: center;
   display: flex;
-
 }
 .contact-submit .cta:before{
   background-color: $primary;
+}
+
+// CONNECTION PAGE
+.signin-container{
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.signin-form{
+  max-width: 1000px;
+  width: 100%;
+  background-color: $secondary1;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: flex;
+  justify-content: center;
+  transform: translateY(-10%);
+}
+.signin-submit{
+  margin-top: 20px;
+  align-content: center;
+  display: flex;
+}
+.signin-submit .cta:before{
+  background-color: $primary;
+}
+.redirect-signup{
+  color: black;
+  font-family: $family-text;
+  font-size: 0.8em;
 }
