@@ -1,1 +1,59 @@
-<h1>Hello World</h1>
+<div>
+    <div class="heroarea">
+        <div class="heroarea-content">
+            <div class="welcome-text">
+                <h1>Bienvenue sur EcoRide !</h1>
+                <h3>La plateforme de covoiturage éco-responsable.</h3>
+                <p>EcoRide est une startup française engagée dans la transition écologique, née d’une volonté forte : rendre les déplacements plus respectueux de l’environnement. Grâce à notre application web dédiée exclusivement aux trajets en voiture, nous encourageons le partage de véhicules pour réduire l’empreinte carbone des transports. Que vous soyez conducteur ou passager, EcoRide vous permet de voyager de manière économique, pratique et surtout écologique. Rejoignez notre communauté et participez à un avenir plus vert, un trajet à la fois !</p>
+            </div>
+
+            <div><img src="/img/iphone.png" alt="mobile" class="mobile-image"></div>
+        </div>
+
+        <div class="welcome-searchbar">
+            <div class="welcome-searchbar-content">
+                <p>Lancez une recherche pour voir les propositions de covoiturages disponibles autour de vous !</p>
+                <button type="button"
+                        class="btn btn-info"
+                        data-bs-toggle="popover"
+                        data-bs-placement="right"
+                        data-bs-html="true"
+                        title="Comment rechercher un trajet"
+                        data-bs-content="Remplissez les champs <em>Ville de départ</em>, <em>Date de départ</em>, <em>Ville d'arrivée</em> et <em>Date d'arrivée</em>. Puis cliquez sur <strong>Rechercher</strong>."
+                        aria-label="Info">
+                </button>
+            </div>
+
+            <div class="searchbar">
+                <form class="searchbar-form">
+                    <div class="searchbar-inputs">
+                        <div class="searchbar-input">
+                            <label class="label-inputs" for="departure">Ville de départ</label>
+                            <input class="inputs" type="text" name="departure" placeholder="Départ" required id="departure">
+                        </div>
+                        <div class="searchbar-input">
+                            <label class="label-inputs" for="departureDate">Date de départ</label>
+                            <input class="inputs" type="date" name="departureDate" placeholder="Date de départ" required id="departureDate">
+                        </div>
+                        <div class="searchbar-input">
+                            <label class="label-inputs" for="arrival">Ville d'arrivée</label>
+                            <input class="inputs" type="text" name="arrival" placeholder="Arrivée" required id="arrival">
+                        </div>
+                        <div class="searchbar-input">
+                            <label class="label-inputs" for="arrivalDate">Date d'arrivée</label>
+                            <input class="inputs" type="date" name="arrivalDate" placeholder="Date d'arrivée" required id="arrivalDate">
+                        </div>
+                    </div>
+
+                    <button class="cta" type="submit">
+                        <span>Rechercher</span>
+                        <svg width="15px" height="10px" viewBox="0 0 13 10">
+                          <path d="M1,5 L11,5"></path>
+                          <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                      </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
