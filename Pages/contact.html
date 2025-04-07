@@ -12,19 +12,19 @@
         <form id="contactForm">
             <div class="contact-name">
                 <label for="contactNameInput" class="form-label">Votre nom</label>
-                <input type="text" class="form-control" id="contactNameInput" placeholder="Saisissez votre nom ici" name="name">
+                <input type="text" class="form-control" id="contactNameInput" placeholder="Saisissez votre nom ici" name="name" required>
             </div>
             <div class="contact-email">
                 <label for="contactEmailInput" class="form-label">Email</label>
-                <input type="email" class="form-control" id="contactEmailInput" placeholder="Saisissez votre email ici" name="email">
+                <input type="email" class="form-control" id="contactEmailInput" placeholder="Saisissez votre email ici" name="email" required>
             </div>
             <div class="contact-title">
                 <label for="contactSubjectInput" class="form-label">Objet de votre message</label>
-                <input type="text" class="form-control" id="contactSubjectInput" placeholder="Donnez un titre à votre message" name="subject">
+                <input type="text" class="form-control" id="contactSubjectInput" placeholder="Donnez un titre à votre message" name="subject" required>
             </div>
             <div class="contact-message">
                 <label for="contactMessageInput" class="form-label">Votre message</label>
-                <textarea class="form-control" id="contactMessageInput" rows="7" placeholder="Ecrivez votre message ici" name="message"></textarea>
+                <textarea class="form-control" id="contactMessageInput" rows="7" placeholder="Ecrivez votre message ici" name="message" required></textarea>
             </div>
             <div class="contact-submit">
                 <button class="cta" type="submit">
