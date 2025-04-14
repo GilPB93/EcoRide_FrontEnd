@@ -15,7 +15,7 @@ h3 {
   font-size: 2.3em;
 }
 h4 {
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 p {
   font-family: $family-text;
@@ -38,7 +38,7 @@ main {
   margin: 0; 
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: flex-start; 
   width: 100%; 
 }
 header, footer {
@@ -298,6 +298,7 @@ footer p {
 
 
 
+
 // MULTIPLE USES FOR PAGES
 .hero-image {
   background-size: cover; 
@@ -487,3 +488,122 @@ footer p {
   font-size: 0.8em;
   margin: 0 0 0 5px;
 }
+
+// PASSED TRIPS PAGE
+.passedtrips-container{
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.carrousel-passedtrips{
+  background-color: $secondary2;
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.passedtrips-searchbar-title{
+  display: flex;
+  flex-direction: row;
+}
+.passedtrips-searchbar button{
+  margin-left: 10px;
+}
+.form-select-passedtrips{
+  max-width: 250px;
+  width: 100%;
+  font-family: $family-text;
+}
+.carrousel-passedtrips-content{
+  margin: 10px;
+  gap: 10px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.card-passedtrips{
+  background-color: $secondary1;
+  border: 7px solid white;
+  border-radius: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 5px;
+  max-width: 350px;
+}
+.card-passedtrips-title{
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+}
+.passedtrips-image{
+  width: 35px;
+  height: 35px;
+  margin-left: 5px;
+  background-color: transparent;
+  align-items: center;
+}
+.card-passedtrips-body{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.card-passedtrips-info{
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+}
+.icon-info-trips{
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  background-color: transparent;
+}
+.info-trips{
+  display: flex;
+  flex-direction: row;
+}
+.info-trips span{
+  font-family: $family-text;
+  font-size: 1em;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.card-passedtrips-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: center;
+  margin: 5px;
+}
+.btn-details-trips{
+  background-color: $secondary2;
+  width: 200px;
+  height: 100%;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  font-family: $family-title;
+  font-size: 1.5em;
+  font-weight: 700;
+  border-radius: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.btn-details-trips:hover {
+  background-color: $primary;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+.icon-previous{
+  justify-content: flex-start;
+  display: flex;
+}
+.icon-next{
+  justify-content: flex-end;
+  display: flex;
+}
+
